@@ -6,7 +6,7 @@ const genereatedSignature = (
   mail,
   role,
   telephone
-) => `<table style="width: 525px; font-size: 11pt; font-family: Roboto, sans-serif;" cellspacing="0" cellpadding="0">
+) => `<table style="width: 525px; font-size: 11pt; font-family: Roboto, sans-serif; background-color: white" cellspacing="0" cellpadding="0">
 <tbody>
     <tr>
     <td style="font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid; border-right-color: #fb6303; width: 85px; vertical-align: top; text-align: center; padding: 0 20px;" rowspan="6" valign="top"><a href="https://www.my-company.com/" target="_blank" rel="noopener"><img style="width: 85px; height: 85px; border: 0;" src="https://quinck-open.s3-eu-west-1.amazonaws.com/logo.png" alt="Logo" border="0" /></a>
@@ -111,10 +111,15 @@ function App() {
         </form>
         {isGenereated && (
           <div>
-            <pre>
+            {/* <pre>
               <code>{genereatedSignature(name, mail, role, telephone)}</code>
-            </pre>
-            <button
+            </pre> */}
+            <div
+              dangerouslySetInnerHTML={{
+                __html: genereatedSignature(name, mail, role, telephone),
+              }}
+            ></div>
+            {/* <button
               type="button"
               onClick={() =>
                 navigator.clipboard.writeText(
@@ -123,7 +128,7 @@ function App() {
               }
             >
               CLICCA PER COPIARE SUBITO!
-            </button>
+            </button> */}
             <button type="reset" onClick={reset}>
               Reset
             </button>
