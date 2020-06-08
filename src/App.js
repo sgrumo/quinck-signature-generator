@@ -65,44 +65,49 @@ function App() {
       </header>
       <main>
         <form onSubmit={handleSubmit}>
-          <label>
-            Nome:
-            <input
-              type="text"
-              name="name"
-              value={name}
-              required
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-          <label>
-            Mail:
-            <input
-              type="email"
-              value={mail}
-              required
-              onChange={(e) => setMail(e.target.value)}
-            />
-          </label>
-          <label>
-            Ruolo:
-            <input
-              type="text"
-              required
-              value={role}
-              onChange={(e) => setRole(e.target.value)}
-            />
-          </label>
-          <label>
-            Telefono:
-            <input
-              type="number"
-              required
-              value={telephone}
-              onChange={(e) => setTelephone(e.target.value)}
-            />
-          </label>
-          <button type="submit"> Genera!</button>
+          <div className="inputs-container">
+            <label>
+              Nome:
+              <input
+                type="text"
+                name="name"
+                value={name}
+                required
+                onChange={(e) => setName(e.target.value)}
+              />
+            </label>
+            <label>
+              Mail:
+              <input
+                type="email"
+                value={mail}
+                required
+                onChange={(e) => setMail(e.target.value)}
+              />
+            </label>
+            <label>
+              Ruolo:
+              <input
+                type="text"
+                required
+                value={role}
+                onChange={(e) => setRole(e.target.value)}
+              />
+            </label>
+            <label>
+              Telefono:
+              <input
+                type="number"
+                required
+                value={telephone}
+                onChange={(e) => setTelephone(e.target.value)}
+              />
+            </label>
+          </div>
+          <button type="submit" className="generator-button">
+            {" "}
+            Genera!
+          </button>
         </form>
         {isGenereated && (
           <div>

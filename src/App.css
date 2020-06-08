@@ -3,6 +3,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 0 5rem;
 }
 
 .App-logo {
@@ -18,4 +19,28 @@
 pre {
     padding: 1rem;
     background-color: lightgray;
+}
+
+.inputs-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 50%;
+}
+
+button {
+    border-radius: 8px;
+}
+
+.generator-button {
+    margin-top: 1.5rem;
 }
