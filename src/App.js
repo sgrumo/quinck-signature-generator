@@ -126,9 +126,6 @@ function App() {
         </form>
         {isGenereated && (
           <div>
-            {/* <pre>
-              <code>{genereatedSignature(name, mail, role, telephone)}</code>
-            </pre> */}
             <div
               dangerouslySetInnerHTML={{
                 __html: genereatedSignature(name, mail, role, telephone),
@@ -144,6 +141,9 @@ function App() {
             >
               CLICCA PER COPIARE SUBITO!
             </button> */}
+            <pre>
+              <code>{genereatedSignature(name, mail, role, telephone)}</code>
+            </pre>
             <button type="reset" onClick={reset}>
               Reset
             </button>
