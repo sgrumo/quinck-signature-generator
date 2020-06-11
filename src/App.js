@@ -31,12 +31,16 @@ const genereatedSignature = (
                         <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> | Street, City </span>
                          <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> | Zip Code, Country</span><br/> -->
                          <span style="color: #2175b5;"><strong>e:</strong></span>
-                         <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> ${mail}</span> | 
+                         <a style="text-decoration: none;" href="mailto:${mail}">
+                         <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> ${mail}</span>
+                         </a> | 
                          <span style="color: #2175b5;"><strong>w:</strong></span>                                
-                         <a style="text-decoration: none;" href="http://www.my-company.com" target="_blank" rel="noopener">
+                         <a style="text-decoration: none;" href="https://www.quinck.io/" target="_blank" rel="noopener">
                          <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> www.quinck.io</span></a><br /> 
                          <span style="color: #2175b5;"><strong>m:</strong></span>
+                         <a style="text-decoration: none;" href="tel:+39${telephone}">
                         <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> +39 ${telephone}</span>
+                        </a>
                          <!-- | <span style="color: #2175b5;"><strong>p:</strong></span> <span style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;"> (800) 555-0199</span> </td>
                     </tr>
                     <tr>
