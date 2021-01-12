@@ -16,7 +16,7 @@ const genereatedSignature = (
 <table style="width: 525px; font-size: 11pt; font-family: Roboto, sans-serif; background-color: white" cellspacing="0" cellpadding="0">
 <tbody>
     <tr>
-    <td style="font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid; border-right-color: #2175b5; width: 85px; vertical-align: top; text-align: center; padding: 0 20px;" rowspan="6" valign="top"><a href="https://www.quinck.io/" target="_blank" rel="noopener"><img style="width: 85px; height: 85px; border: 0;" src="https://quinck-open.s3-eu-west-1.amazonaws.com/logo.png" alt="Logo" border="0" /></a>
+    <td style="font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid; border-right-color: #2175b5; width: 85px; vertical-align: top; text-align: center; padding: 0 20px;" rowspan="6" valign="top"><a href="https://www.quinck.io/" target="_blank" rel="noopener"><img style="max-width:85px; max-height: 85px; width: 85px; height: 85px; border: 0;" src="https://quinck-open.s3-eu-west-1.amazonaws.com/logo.png" alt="Logo" border="0" /></a>
     <h2 style="margin: 0">Quinck</h2>
     </td>
         <td style="padding-left: 10px;">
